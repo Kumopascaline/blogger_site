@@ -70,6 +70,10 @@ body {
   height: 100px;
 }
 
-.blog-preview Link {
+.blog-preview a {
   text-decoration: none;
+}
+
+h2{
+  color: crimson;
 }
