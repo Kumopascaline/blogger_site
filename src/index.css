@@ -78,11 +78,34 @@ h2{
   color: crimson;
 }
 
-form{
-  
+form div{
+padding: 20px;
+}
+input{
+  padding-top: 15px;
+}
+textarea{
+  width: 500px;
+  height: 500px;
+}
+select{
+  padding: 5px 25px;
+  font-size: medium;
 }
 label{
   color: crimson;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
+  
+}
+button{
+  background-color: crimson;
+  padding: 6px 20px;
+  font-size: medium;
+  border-radius: 5px;
+  font-weight: 10px;
+}
+
+h1{
+  color: crimson;
 }

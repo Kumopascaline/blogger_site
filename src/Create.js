@@ -27,24 +27,30 @@ const Create = (e) => {
     <div className="create">
       <h1>Add New Blog</h1>
       <form onSubmit={handleSubmit}>
-        <label>Blog Title: </label>
-        <input
-          type="text"
-          required
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        ></input>
-        <label>Blog Body</label>
+        <div>
+          <label>Blog Title: </label>
+          <input
+            type="text"
+            required
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          ></input>
+        </div>
+        <div>
+        <label>Blog Body: </label>
         <textarea
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
+        </div>
+        <div>
         <label>Blog author: </label>
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>
           <option value="mario">mario</option>
           <option value="yoshi">yoshi</option>
         </select>
+        </div>
         {!isPending && <button>Add Blog</button>}
         {isPending && <button>Add Blog.....</button>}
       </form>
